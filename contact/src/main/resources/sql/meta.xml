@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+
+    <module name="module_crm_contact">
+
+        <table name="MCOContact">
+            <columns>
+                <column name="ID" data-type="BIGINT"/>
+                <column name="ORG_ID" data-type="BIGINT" nullable="false"/>
+                <column name="NAME" data-type="BIGINT" nullable="false"/>
+            </columns>
+            <primary-key name="MCOContact_PK" column="ID" sequence-generator="MCOContact.ID" />
+        </table>
+
+    </module>
+
+</metadata>

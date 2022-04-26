@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+
+    <module name="module_crm_crud">
+
+        <table name="CricketKit">
+            <columns>
+                <column name="ID" data-type="BIGINT"/>
+                <column name="NAME" data-type="CHAR" nullable="false"/>
+                <column name="BRAND" data-type="CHAR" nullable="false"/>
+                <column name="PRICE" data-type="CHAR" nullable="false"/>
+                <column name="SIZE" data-type="CHAR" nullable="false"/>
+            </columns>
+            <primary-key name="CricketKit_PK" column="ID" sequence-generator="CricketKit.ID"/>
+        </table>
+
+    </module>
+
+</metadata>
