@@ -89,13 +89,11 @@ public class ProductManagement extends CrmConfigAction<Product> {
      */
     @Override
     protected void constructResponse(final Collection<Product> models, final JsonObject responeJson) {
-        final int[] slno = {1};
         models.forEach(model -> {
             final JsonObject jsonObject = Json.object();
 
             constructResponse(model, jsonObject);
-            responeJson.put("model " + slno[0], jsonObject);
-            slno[0]++;
+            responeJson.put("id " + model.id(), jsonObject);
         });
     }
 
